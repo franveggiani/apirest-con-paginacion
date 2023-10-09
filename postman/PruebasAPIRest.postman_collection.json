@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "74d69e0b-4274-4e93-82d0-c3c11bc7c372",
+		"name": "PruebasAPIRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22369117"
+	},
+	"item": [
+		{
+			"name": "Personas",
+			"item": [
+				{
+					"name": "persona 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2, //Por alguna extraña razón tengo que poner 'id':2 porque sino no funciona, ni siquiera probando otros id's\r\n    \"nombre\": \"Pablo\",\r\n    \"apellido\": \"Perez\",\r\n    \"dni\": \"44310957\",\r\n    \"domicilio\": {\r\n        \"id\": 1, \r\n        \"calle\": \"wtf\",\r\n        \"numero\": 156,\r\n        \"localidad\": {\r\n            \"id\": 1,\r\n            \"denominacion\": \"que esta pasando\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-rest-sin-paginacion-uzt8.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"api-rest-sin-paginacion-uzt8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all personas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-rest-sin-paginacion-uzt8.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"api-rest-sin-paginacion-uzt8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete persona",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api-rest-sin-paginacion-uzt8.onrender.com/api/v1/personas/1",
+							"protocol": "https",
+							"host": [
+								"api-rest-sin-paginacion-uzt8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Todas las operaciones HTTP de Persona"
+		},
+		{
+			"name": "Localidades",
+			"item": [
+				{
+					"name": "localidad",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"denominacion\": \"La cieneguita\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-rest-sin-paginacion-uzt8.onrender.com/api/v1/localidades",
+							"protocol": "https",
+							"host": [
+								"api-rest-sin-paginacion-uzt8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"localidades"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Domicilios",
+			"item": [
+				{
+					"name": "domicilio 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"calle\": \"Json 123\",\r\n    \"numero\": 123,\r\n    \"localidad\": {\r\n        \"id\": 1,\r\n        \"denominacion\": \"La cieneguita\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-rest-sin-paginacion-uzt8.onrender.com/api/v1/domicilio",
+							"protocol": "https",
+							"host": [
+								"api-rest-sin-paginacion-uzt8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"domicilio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "domicilio 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"calle\": \"Json 123\",\r\n    \"numero\": 123,\r\n    \"localidad\": {\r\n        \"id\": 1,\r\n        \"denominacion\": \"Alguna denominacion\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-rest-sin-paginacion-uzt8.onrender.com/api/v1/domicilios/1",
+							"protocol": "https",
+							"host": [
+								"api-rest-sin-paginacion-uzt8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"domicilios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all domicilios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-rest-sin-paginacion-uzt8.onrender.com/api/v1/domicilios",
+							"protocol": "https",
+							"host": [
+								"api-rest-sin-paginacion-uzt8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"domicilios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete domicilio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api-rest-sin-paginacion-uzt8.onrender.com/api/v1/domicilios/2",
+							"protocol": "https",
+							"host": [
+								"api-rest-sin-paginacion-uzt8",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"domicilios",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Libros",
+			"item": []
+		},
+		{
+			"name": "Autores",
+			"item": []
+		}
+	]
+}
