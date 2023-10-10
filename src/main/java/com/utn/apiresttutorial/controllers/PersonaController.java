@@ -33,4 +33,13 @@ public class PersonaController extends BaseControllerImpl<Persona, PersonaServic
         }
     }
 
+    @GetMapping("/searchNative")
+    public ResponseEntity<?> searchNative(@RequestParam String filtro){
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(service.searchNative(filtro));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }
+    }
+
 }

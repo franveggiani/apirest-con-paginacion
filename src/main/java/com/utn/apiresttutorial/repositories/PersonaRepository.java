@@ -20,7 +20,6 @@ public interface PersonaRepository extends BaseRepository<Persona, Long> {
     List<Persona> searchNative(@Param("filtro") String filtro);
 
     //Pageable
-
     @Query(value = "SELECT p FROM Persona p WHERE p.nombre LIKE %:filtro% OR p.apellido LIKE %:filtro%")
     Page<Persona> search(@Param("filtro") String filtro, Pageable pageable);
 

@@ -16,8 +16,10 @@ public class PersonaServiceImpl extends BaseServiceImpl<Persona, Long> implement
     private PersonaRepository personaRepository;
 
     public PersonaServiceImpl(BaseRepository<Persona, Long> baseRepository, PersonaRepository personaRepository) {
+
         super(baseRepository);
         this.personaRepository = personaRepository;
+
     }
     public List<Persona> search(String filtro) throws Exception {
         try {
