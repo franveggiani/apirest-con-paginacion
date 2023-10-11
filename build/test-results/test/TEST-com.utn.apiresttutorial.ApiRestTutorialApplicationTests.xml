@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.utn.apiresttutorial.ApiRestTutorialApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-06T03:24:11" hostname="DESKTOP-F900H8J" time="0.623">
+<testsuite name="com.utn.apiresttutorial.ApiRestTutorialApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-11T22:31:25" hostname="DESKTOP-F900H8J" time="0.643">
   <properties/>
-  <testcase name="contextLoads()" classname="com.utn.apiresttutorial.ApiRestTutorialApplicationTests" time="0.623"/>
-  <system-out><![CDATA[00:24:05.944 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.utn.apiresttutorial.ApiRestTutorialApplicationTests]: ApiRestTutorialApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:24:06.079 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.utn.apiresttutorial.ApiRestTutorialApplication for test class com.utn.apiresttutorial.ApiRestTutorialApplicationTests
+  <testcase name="contextLoads()" classname="com.utn.apiresttutorial.ApiRestTutorialApplicationTests" time="0.643"/>
+  <system-out><![CDATA[19:31:19.566 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.utn.apiresttutorial.ApiRestTutorialApplicationTests]: ApiRestTutorialApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:31:19.699 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.utn.apiresttutorial.ApiRestTutorialApplication for test class com.utn.apiresttutorial.ApiRestTutorialApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,20 +13,20 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.4)
 
-2023-10-06T00:24:06.589-03:00  INFO 5488 --- [    Test worker] c.u.a.ApiRestTutorialApplicationTests    : Starting ApiRestTutorialApplicationTests using Java 17.0.8 with PID 5488 (started by franc in D:\Documentos\Tercer año ingeniería\Desarrollo SW\backend-dsw\api-rest-tutorial)
-2023-10-06T00:24:06.592-03:00  INFO 5488 --- [    Test worker] c.u.a.ApiRestTutorialApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2023-10-06T00:24:07.642-03:00  INFO 5488 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-06T00:24:07.739-03:00  INFO 5488 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
-2023-10-06T00:24:08.354-03:00  INFO 5488 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-06T00:24:08.457-03:00  INFO 5488 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-06T00:24:08.462-03:00  INFO 5488 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-06T00:24:08.674-03:00  INFO 5488 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-06T00:24:08.863-03:00  INFO 5488 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-06T00:24:08.886-03:00  INFO 5488 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-06T00:24:09.119-03:00  INFO 5488 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:./betodb user=SA
-2023-10-06T00:24:09.121-03:00  INFO 5488 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-06T00:24:09.419-03:00  INFO 5488 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-06T00:24:10.167-03:00  INFO 5488 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T19:31:20.252-03:00  INFO 3412 --- [    Test worker] c.u.a.ApiRestTutorialApplicationTests    : Starting ApiRestTutorialApplicationTests using Java 17.0.8 with PID 3412 (started by franc in D:\Documentos\Tercer año ingeniería\Desarrollo SW\BACKEND\api-rest-con-paginacion)
+2023-10-11T19:31:20.253-03:00  INFO 3412 --- [    Test worker] c.u.a.ApiRestTutorialApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T19:31:21.140-03:00  INFO 3412 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T19:31:21.217-03:00  INFO 3412 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 5 JPA repository interfaces.
+2023-10-11T19:31:21.863-03:00  INFO 3412 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T19:31:21.929-03:00  INFO 3412 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T19:31:21.932-03:00  INFO 3412 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T19:31:22.131-03:00  INFO 3412 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:31:22.329-03:00  INFO 3412 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T19:31:22.349-03:00  INFO 3412 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T19:31:22.517-03:00  INFO 3412 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:./betodb user=SA
+2023-10-11T19:31:22.519-03:00  INFO 3412 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T19:31:22.844-03:00  INFO 3412 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T19:31:23.467-03:00  INFO 3412 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 Hibernate: drop table if exists autor cascade 
 Hibernate: drop table if exists domicilio cascade 
 Hibernate: drop table if exists libro cascade 
@@ -35,7 +35,7 @@ Hibernate: drop table if exists localidad cascade
 Hibernate: drop table if exists persona cascade 
 Hibernate: drop table if exists persona_libro cascade 
 Hibernate: create table autor (id bigint generated by default as identity, biografia varchar(1500), apellido varchar(255), nombre varchar(255), primary key (id))
-Hibernate: create table domicilio (numero integer, fk_localidad bigint not null, id bigint generated by default as identity, calle varchar(255), primary key (id))
+Hibernate: create table domicilio (numero integer, fk_localidad bigint, id bigint generated by default as identity, calle varchar(255), primary key (id))
 Hibernate: create table libro (fecha integer, paginas integer, id bigint generated by default as identity, genero varchar(255), titulo varchar(255), primary key (id))
 Hibernate: create table libro_autores (autores_id bigint not null, libro_id bigint not null)
 Hibernate: create table localidad (id bigint generated by default as identity, denominacion varchar(255), primary key (id))
@@ -47,10 +47,11 @@ Hibernate: alter table if exists libro_autores add constraint FKsoheqe18ertlksjn
 Hibernate: alter table if exists persona add constraint FKdvcd83wmvj0mwmbu3kyoisobn foreign key (fk_domicilio) references domicilio
 Hibernate: alter table if exists persona_libro add constraint FK6oar3k71e0huyyjlxd0a8qnct foreign key (libro_id) references libro
 Hibernate: alter table if exists persona_libro add constraint FKd8c57cn01g1qhcax4yanhi2o4 foreign key (persona_id) references persona
-2023-10-06T00:24:10.233-03:00  INFO 5488 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-06T00:24:10.921-03:00  WARN 5488 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-10-06T00:24:11.666-03:00  INFO 5488 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:./betodb'
-2023-10-06T00:24:11.741-03:00  INFO 5488 --- [    Test worker] c.u.a.ApiRestTutorialApplicationTests    : Started ApiRestTutorialApplicationTests in 5.431 seconds (process running for 7.183)
+2023-10-11T19:31:23.540-03:00  INFO 3412 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T19:31:23.965-03:00  INFO 3412 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-11T19:31:24.686-03:00  WARN 3412 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-11T19:31:25.505-03:00  INFO 3412 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:./betodb'
+2023-10-11T19:31:25.587-03:00  INFO 3412 --- [    Test worker] c.u.a.ApiRestTutorialApplicationTests    : Started ApiRestTutorialApplicationTests in 5.63 seconds (process running for 7.189)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
