@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "960add49-d572-4565-ab48-b9fb9dab470e",
+		"name": "Pruebas con querys",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22369117"
+	},
+	"item": [
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "filtro",
+						"value": "\"juan\"",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/personas/search?filtro=a",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"search"
+					],
+					"query": [
+						{
+							"key": "filtro",
+							"value": "a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postPersona1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"nombre\": \"Jorge\",\r\n    \"apellido\": \"Harrison\",\r\n    \"dni\": \"44310957\",\r\n    \"domicilio\": {\r\n        \"calle\": \"wtf\",\r\n        \"numero\": 156,\r\n        \"localidad\": {\r\n            \"denominacion\": \"localidad\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-rest-con-paginacion-d54x.onrender.com/api/v1/personas",
+					"protocol": "https",
+					"host": [
+						"api-rest-con-paginacion-d54x",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postPersona2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"nombre\": \"Juan\",\r\n    \"apellido\": \"Lennon\",\r\n    \"dni\": \"44310957\",\r\n    \"domicilio\": {\r\n        \"calle\": \"wtf\",\r\n        \"numero\": 156,\r\n        \"localidad\": {\r\n            \"denominacion\": \"localidad\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/personas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postPersona3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"nombre\": \"Pablo\",\r\n    \"apellido\": \"McCartney\",\r\n    \"dni\": \"44310957\",\r\n    \"domicilio\": {\r\n        \"calle\": \"wtf\",\r\n        \"numero\": 156,\r\n        \"localidad\": {\r\n            \"denominacion\": \"localidad\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/personas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postPersona4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"nombre\": \"Pablo\",\r\n    \"apellido\": \"McCartney\",\r\n    \"dni\": \"44310957\",\r\n    \"domicilio\": {\r\n        \"calle\": \"wtf\",\r\n        \"numero\": 156,\r\n        \"localidad\": {\r\n            \"denominacion\": \"localidad\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/personas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/personas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete persona",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/personas/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put persona",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"nombre\": \"Franquito\",\r\n    \"apellido\": \"Veggiani\",\r\n    \"dni\": \"44310957\",\r\n    \"domicilio\": {\r\n        \"calle\": \"wtf\",\r\n        \"numero\": 156,\r\n        \"localidad\": {\r\n            \"denominacion\": \"localidad\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/personas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchPaged",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/personas/searchPaged?page=1&size=3&filtro=a",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"personas",
+						"searchPaged"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "3"
+						},
+						{
+							"key": "filtro",
+							"value": "a"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
